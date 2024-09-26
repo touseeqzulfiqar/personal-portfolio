@@ -52,4 +52,4 @@ For any questions or inquiries, please contact Touseeq Zulfiqar at:
 - Make sure the website is accessible and user-friendly for people with disabilities.
 - Regularly update the content and keep the website fresh.
 
-**Remember to replace `your-username` with your actual GitHub username.**
+**Remember to replace `touseeqzulfiqar` with your actual GitHub username.**
