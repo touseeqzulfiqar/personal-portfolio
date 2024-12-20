@@ -562,9 +562,9 @@ main {
 
 .marquee {
   display: flex;
-  width: 100%;
+  width: 70%;
   position: relative;
-  animation: scroll-alternate 20s infinite linear;
+  animation: scroll-alternate 10s infinite linear;
 }
 
 .marquee-content {
@@ -590,6 +590,7 @@ main {
   font-size: medium;
   display: flex;
   font-weight: 600;
+  align-items: center;
   gap: 8px; /* Adds space between the icon and the text */
 }
 

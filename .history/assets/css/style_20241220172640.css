@@ -564,13 +564,14 @@ main {
   display: flex;
   width: 100%;
   position: relative;
-  animation: scroll-alternate 20s infinite linear;
+  animation: scroll-alternate 10s infinite linear;
 }
 
 .marquee-content {
  display: flex;
   gap: 40px; /* Space between logos */
   font-size: 2.5rem;
+  text-align: center;
 }
 
 .logo {
@@ -590,6 +591,7 @@ main {
   font-size: medium;
   display: flex;
   font-weight: 600;
+  align-items: center;
   gap: 8px; /* Adds space between the icon and the text */
 }
 

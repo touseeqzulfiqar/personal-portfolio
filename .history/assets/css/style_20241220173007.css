@@ -571,6 +571,7 @@ main {
  display: flex;
   gap: 40px; /* Space between logos */
   font-size: 2.5rem;
+  justify-items: center;
 }
 
 .logo {
@@ -590,6 +591,7 @@ main {
   font-size: medium;
   display: flex;
   font-weight: 600;
+  align-items: center;
   gap: 8px; /* Adds space between the icon and the text */
 }
 

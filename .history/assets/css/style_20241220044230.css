@@ -554,60 +554,31 @@ main {
 
 .logo-marquee {
   overflow: hidden;
-  padding: 20px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  padding: 10px 0;
 }
 
 .marquee {
   display: flex;
-  width: 100%;
-  position: relative;
-  animation: scroll-alternate 20s infinite linear;
+  animation: slide 15s linear infinite;
 }
 
 .marquee-content {
- display: flex;
-  gap: 40px; /* Space between logos */
-  font-size: 2.5rem;
+  display: flex;
+  gap: 30px;
 }
 
 .logo {
-  width: 80px;
-  height: 50px;
-  color: #FFD43B;
-  transition: transform 0.3s ease;
+  height: 200px;
+  object-fit: contain;
 }
 
-.logo:hover {
-  transform: scale(1.2); /* Slight hover effect for interactivity */
-}
-
-.logo-text {
-  color: #FFFFFF;
-  font-style: italic;
-  font-size: medium;
-  display: flex;
-  font-weight: 600;
-  gap: 8px; /* Adds space between the icon and the text */
-}
-
-.logo-text i {
-  font-size: 1.5rem; /* Adjust icon size */
-  color: #FFFFFF; /* React's iconic blue color */
-}
-
-/* Alternate marquee animation */
-@keyframes scroll-alternate {
+@keyframes slide {
   0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(-50%);
+    transform: translateX(100%);
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(-100%);
   }
 }
 

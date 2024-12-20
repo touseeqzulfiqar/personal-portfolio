@@ -562,9 +562,9 @@ main {
 
 .marquee {
   display: flex;
-  width: 100%;
+  width: 70%;
   position: relative;
-  animation: scroll-alternate 20s infinite linear;
+  animation: scroll-alternate 10s infinite linear;
 }
 
 .marquee-content {
@@ -575,7 +575,7 @@ main {
 
 .logo {
   width: 80px;
-  height: 50px;
+  height: 80px;
   color: #FFD43B;
   transition: transform 0.3s ease;
 }
@@ -589,13 +589,13 @@ main {
   font-style: italic;
   font-size: medium;
   display: flex;
-  font-weight: 600;
+  align-items: center;
   gap: 8px; /* Adds space between the icon and the text */
 }
 
 .logo-text i {
   font-size: 1.5rem; /* Adjust icon size */
-  color: #FFFFFF; /* React's iconic blue color */
+  color: #61DAFB; /* React's iconic blue color */
 }
 
 /* Alternate marquee animation */

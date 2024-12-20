@@ -564,38 +564,24 @@ main {
   display: flex;
   width: 100%;
   position: relative;
-  animation: scroll-alternate 20s infinite linear;
+  animation: scroll-alternate 10s infinite linear;
 }
 
 .marquee-content {
  display: flex;
   gap: 40px; /* Space between logos */
-  font-size: 2.5rem;
+  font-size: 4rem;
 }
 
 .logo {
-  width: 80px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   color: #FFD43B;
   transition: transform 0.3s ease;
 }
 
 .logo:hover {
   transform: scale(1.2); /* Slight hover effect for interactivity */
-}
-
-.logo-text {
-  color: #FFFFFF;
-  font-style: italic;
-  font-size: medium;
-  display: flex;
-  font-weight: 600;
-  gap: 8px; /* Adds space between the icon and the text */
-}
-
-.logo-text i {
-  font-size: 1.5rem; /* Adjust icon size */
-  color: #FFFFFF; /* React's iconic blue color */
 }
 
 /* Alternate marquee animation */

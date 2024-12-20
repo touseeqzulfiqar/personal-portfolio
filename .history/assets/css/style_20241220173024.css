@@ -590,6 +590,7 @@ main {
   font-size: medium;
   display: flex;
   font-weight: 600;
+  align-items: center;
   gap: 8px; /* Adds space between the icon and the text */
 }
 
