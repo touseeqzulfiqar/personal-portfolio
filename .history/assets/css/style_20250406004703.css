@@ -560,19 +560,34 @@ main {
   align-items: center;
 }
 
+.logo-marquee {
+  overflow: hidden;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #121212, #1f1f1f);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 .marquee {
   display: flex;
   width: 100%;
   position: relative;
-  animation: scroll-alternate 20s infinite linear;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .marquee-content {
- display: flex;
-  gap: 40px; /* Space between logos */
-  font-size: 2.5rem;
+  display: flex;
+  gap: 50px; /* Adjusted space for better aesthetics */
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+  animation: marquee-scroll 15s linear infinite;
 }
-
 .logo {
   width: 80px;
   height: 50px;
@@ -1979,26 +1994,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   /**
 	 * RESUME
 	 */
-
-.skills-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px;
-  list-style: none;
-}
-
-.skills-item {
-  flex: 1 1 calc(33% - 20px); /* Two items per row with gap */
-  box-sizing: border-box;
-}
-
-@media (max-width: 768px) {
-  .skills-item {
-    flex: 1 1 100%; /* One item per row on smaller screens */
-  }
-}
-
 
   .timeline-text { max-width: 700px; }
 

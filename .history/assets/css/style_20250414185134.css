@@ -1984,12 +1984,12 @@ textarea.form-input::-webkit-resizer { display: none; }
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 20px;
+  padding: 0;
   list-style: none;
 }
 
 .skills-item {
-  flex: 1 1 calc(33% - 20px); /* Two items per row with gap */
+  flex: 1 1 calc(50% - 20px); /* Two items per row with gap */
   box-sizing: border-box;
 }
 

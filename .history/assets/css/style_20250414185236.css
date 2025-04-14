@@ -1984,8 +1984,9 @@ textarea.form-input::-webkit-resizer { display: none; }
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 20px;
+  padding: 0;
   list-style: none;
+  margin: 20px;
 }
 
 .skills-item {
