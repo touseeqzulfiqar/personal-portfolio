@@ -456,9 +456,9 @@
             </div>
 
             <h3 class="h3">Education</h3>
-            <button class="form-btn" type="submit" onclick="window.location.href='CV/Touseeq_zulfiqar_cv.pdf';">>
-              <span>Download Resume</span>
-              <ion-icon name="arrow-down"></ion-icon>
+            <button class="form-btn" type="submit" disabled data-form-btn @click="sendEmail()">>
+              <ion-icon name="arrow-forward"></ion-icon>
+              <span>Send Message</span>
             </button>
           </div>
 

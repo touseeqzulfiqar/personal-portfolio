@@ -159,4 +159,41 @@ for (let i = 0; i < navigationLinks.length; i++) {
 }
 
 //download Resume
+function downloadCV() {
+  // Define the path to the resume file
+  const filePath = "/projects/your-resume-file.pdf"; // Ensure this file path is correct and accessible
 
+  // Check if the file exists at the given path before triggering the download
+  const fileExists = checkFileExists(filePath);
+
+  if (fileExists) {
+    // Create an anchor tag to trigger the download
+    const link = document.createElement("a");
+
+    // Set the href attribute to the file path
+    link.href = filePath;
+
+    // Set the download attribute to specify the default filename
+    link.download = "CV/Touseeq_zulfiqar_cv.pdf";
+
+    // Append the link to the document (this step is necessary for older browsers)
+    document.body.appendChild(link);
+
+    // Programmatically trigger the click event to start the download
+    link.click();
+
+    // Remove the link from the DOM after the click
+    document.body.removeChild(link);
+  } else {
+    alert("Sorry, the file is not available at the moment.");
+  }
+}
+
+// Function to check if the file exists (basic check, can be extended if needed)
+function checkFileExists(filePath) {
+  let xhr = new XMLHttpRequest();
+  xhr.open("HEAD", filePath, false);
+  xhr.send();
+
+  return xhr.status !== 404; // Returns true if file exists, false otherwise
+}
