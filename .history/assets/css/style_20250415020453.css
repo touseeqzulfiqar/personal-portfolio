@@ -2005,10 +2005,3 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
-.flex {
-  display: flex;
-  justify-content: space-around;
-  padding-top: 3px;
-  color: #e6b915;
-  align-items: center;
-}

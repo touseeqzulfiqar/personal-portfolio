@@ -867,6 +867,36 @@ main {
   #RESUME
 \*-----------------------------------*/
 
+.education-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.education-header .h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.form-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-btn:hover {
+  background-color: #0056b3;
+}
 
 
 .article-title { margin-bottom: 30px; }
@@ -2004,11 +2034,4 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .timeline-text { max-width: 700px; }
 
-}
-.flex {
-  display: flex;
-  justify-content: space-around;
-  padding-top: 3px;
-  color: #e6b915;
-  align-items: center;
 }

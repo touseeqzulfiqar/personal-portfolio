@@ -2008,7 +2008,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 .flex {
   display: flex;
   justify-content: space-around;
-  padding-top: 3px;
+  padding: 3px;
   color: #e6b915;
-  align-items: center;
 }
