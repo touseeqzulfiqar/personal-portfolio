@@ -160,31 +160,31 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
 //download Resume
 
+// ======== URL-BASED SECTION ACTIVATION (SAFE) ======== //
 window.addEventListener("DOMContentLoaded", () => {
-  const hash = window.location.hash.toLowerCase(); // e.g. "#/youtube"
-  const segment = hash.replace(/^#\//, ""); // remove "#/"
+  const urlSegment = window.location.pathname.toLowerCase().split("/").filter(Boolean).pop();
 
   const routeMap = {
-    youtube: "ytportfolio",
-    webdevelopment: "webportfolio",
-    appdevelopment: "resume",
+    "youtube": "ytportfolio",
+    "webdevelopment": "webportfolio",
+    "appdevelopment": "resume"
   };
 
-  const target = routeMap[segment];
+  const target = routeMap[urlSegment];
   if (!target) return;
 
   const pages = document.querySelectorAll("[data-page]");
   const navLinks = document.querySelectorAll("[data-nav-link]");
 
-  pages.forEach((page) => {
+  pages.forEach(page => {
     page.classList.remove("active");
     if (page.dataset.page === target) {
       page.classList.add("active");
     }
   });
 
-  navLinks.forEach((link) => {
-    const linkText = link.innerText.toLowerCase().replace(/\s/g, "");
+  navLinks.forEach(link => {
+    const linkText = link.innerText.toLowerCase().replace(/\s/g, '');
     link.classList.remove("active");
     if (target.includes(linkText)) {
       link.classList.add("active");
@@ -193,4 +193,3 @@ window.addEventListener("DOMContentLoaded", () => {
 
   window.scrollTo(0, 0);
 });
-

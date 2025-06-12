@@ -160,37 +160,34 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
 //download Resume
 
-window.addEventListener("DOMContentLoaded", () => {
-  const hash = window.location.hash.toLowerCase(); // e.g. "#/youtube"
-  const segment = hash.replace(/^#\//, ""); // remove "#/"
+document.addEventListener("DOMContentLoaded", function () {
+  const currentPath = window.location.pathname.toLowerCase();
+  const pathSegment = currentPath.split("/").filter(Boolean).pop();
 
-  const routeMap = {
-    youtube: "ytportfolio",
-    webdevelopment: "webportfolio",
-    appdevelopment: "resume",
+  const pageRoutes = {
+    "youtube": "ytportfolio",
+    "webdevelopment": "webportfolio",
+    "appdevelopment": "resume"
   };
 
-  const target = routeMap[segment];
-  if (!target) return;
+  const targetPage = pageRoutes[pathSegment];
 
-  const pages = document.querySelectorAll("[data-page]");
-  const navLinks = document.querySelectorAll("[data-nav-link]");
+  if (targetPage) {
+    document.querySelectorAll("[data-page]").forEach(section => {
+      section.classList.remove("active");
+    });
 
-  pages.forEach((page) => {
-    page.classList.remove("active");
-    if (page.dataset.page === target) {
-      page.classList.add("active");
+    const visibleSection = document.querySelector(`[data-page="\${targetPage}"]`);
+    if (visibleSection) {
+      visibleSection.classList.add("active");
+
+      // Navbar سے highlight بھی کریں
+      document.querySelectorAll(".navbar-link").forEach(btn => {
+        btn.classList.remove("active");
+        if (btn.textContent.toLowerCase().includes(targetPage.replace("portfolio", ""))) {
+          btn.classList.add("active");
+        }
+      });
     }
-  });
-
-  navLinks.forEach((link) => {
-    const linkText = link.innerText.toLowerCase().replace(/\s/g, "");
-    link.classList.remove("active");
-    if (target.includes(linkText)) {
-      link.classList.add("active");
-    }
-  });
-
-  window.scrollTo(0, 0);
+  }
 });
-

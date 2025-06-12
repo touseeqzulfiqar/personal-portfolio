@@ -160,37 +160,3 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
 //download Resume
 
-window.addEventListener("DOMContentLoaded", () => {
-  const hash = window.location.hash.toLowerCase(); // e.g. "#/youtube"
-  const segment = hash.replace(/^#\//, ""); // remove "#/"
-
-  const routeMap = {
-    youtube: "ytportfolio",
-    webdevelopment: "webportfolio",
-    appdevelopment: "resume",
-  };
-
-  const target = routeMap[segment];
-  if (!target) return;
-
-  const pages = document.querySelectorAll("[data-page]");
-  const navLinks = document.querySelectorAll("[data-nav-link]");
-
-  pages.forEach((page) => {
-    page.classList.remove("active");
-    if (page.dataset.page === target) {
-      page.classList.add("active");
-    }
-  });
-
-  navLinks.forEach((link) => {
-    const linkText = link.innerText.toLowerCase().replace(/\s/g, "");
-    link.classList.remove("active");
-    if (target.includes(linkText)) {
-      link.classList.add("active");
-    }
-  });
-
-  window.scrollTo(0, 0);
-});
-

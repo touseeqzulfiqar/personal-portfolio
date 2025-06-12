@@ -1190,42 +1190,6 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-
-<!-- Page Routing Script -->
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const currentPath = window.location.pathname.toLowerCase();
-    const pathSegment = currentPath.split("/").filter(Boolean).pop();
-
-    const pageRoutes = {
-      "youtube": "ytportfolio",
-      "webdevelopment": "webportfolio",
-      "appdevelopment": "resume"
-    };
-
-    const targetPage = pageRoutes[pathSegment];
-
-    if (targetPage) {
-      document.querySelectorAll("[data-page]").forEach(section => {
-        section.classList.remove("active");
-      });
-
-      const visibleSection = document.querySelector(`[data-page="\${targetPage}"]`);
-      if (visibleSection) {
-        visibleSection.classList.add("active");
-      }
-
-      document.querySelectorAll(".navbar-link").forEach(navBtn => {
-        navBtn.classList.remove("active");
-        const btnText = navBtn.textContent.toLowerCase().replace(/\s/g, '');
-        if (btnText.includes(targetPage.replace("portfolio", ""))) {
-          navBtn.classList.add("active");
-        }
-      });
-    }
-  });
-</script>
-
 </body>
 
 </html>
