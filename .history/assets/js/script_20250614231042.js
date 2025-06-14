@@ -154,6 +154,6 @@ form?.addEventListener("submit", async (e) => {
     messageBox.textContent = "❌ Oops! Something went wrong.";
     messageBox.style.display = "block";
   } finally {
-    formBtn.disabled = true;
+    formBtn.disabled = false;
   }
 });
