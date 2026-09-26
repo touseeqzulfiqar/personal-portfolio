@@ -1,1232 +1,1192 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Touseeq Zulfiqar - The developer</title>
+  <title>Touseeq Zulfiqar — Software Engineer</title>
 
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
-  <!-- Include Font Awesome -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+  <meta name="description"
+    content="Touseeq Zulfiqar is a Software Engineer building reliable web apps, mobile apps and ERP systems with ASP.NET, React, Vue, Laravel and NestJS.">
+  <meta name="author" content="Touseeq Zulfiqar">
+  <meta name="theme-color" content="#070B16">
 
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Touseeq Zulfiqar — Software Engineer">
+  <meta property="og:description" content="Web, mobile and ERP systems that businesses run on — built clean, fast and on time.">
+  <meta property="og:image" content="./assets/images/touseeq.jpg">
+  <meta name="twitter:card" content="summary">
 
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" href="./assets/images/favicon.svg" type="image/svg+xml">
 
-  <!--
-    - google font link
-  -->
+  <!-- apply saved theme before paint -->
+  <script>
+    try {
+      var t = localStorage.getItem("theme");
+      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+    document.documentElement.classList.add("js");
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Touseeq Zulfiqar",
+    "jobTitle": "Software Engineer",
+    "email": "mailto:touseeqzulfiqar@gmail.com",
+    "worksFor": { "@type": "Organization", "name": "GLOWSIMS Educational Services" },
+    "alumniOf": "University of Gujrat",
+    "address": { "@type": "PostalAddress", "addressRegion": "Punjab", "addressCountry": "PK" },
+    "sameAs": [
+      "https://www.linkedin.com/in/touseeq-zulfiqar-521510200/",
+      "https://github.com/touseeqzulfiqar"
+    ]
+  }
+  </script>
 </head>
 
 <body>
 
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="scroll-progress" data-scroll-progress aria-hidden="true"></div>
+
   <!--
-    - #MAIN
+    - #HEADER
   -->
 
-  <main>
+  <header class="header" data-header>
+    <div class="container header-inner">
 
-    <!--
-      - #SIDEBAR
-    -->
+      <a href="#top" class="brand" aria-label="Touseeq Zulfiqar — home">
+        <span class="brand-mark">TZ</span>
+        <span class="brand-name">Touseeq Zulfiqar</span>
+      </a>
 
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/passportsize.jpg" alt="Touseeq Zulfiqar" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Touseeq Zulfiqar</h1>
-
-          <p class="title">Software Engineer</p>
-        </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Resume</p>
-              <a href='CV/Touseeq_zulfiqar_cv.pdf';" class="contact-link">
-                <div class="flex">
-                  <span>Download Resume</span>
-                  <ion-icon name="arrow-down"></ion-icon>
-                </div>
-              </a>
-            </div>
-
-          </li>
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:touseeqzulfiqar@gmail.com" class="contact-link">touseeqzulfiqar@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+923026576657" class="contact-link">+92 3026576657</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">linkedin</p>
-              <a href="https://www.linkedin.com/in/touseeq-zulfiqar-521510200/" class="contact-link">touseeqzulfiqar</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>punjab, Pakistan</address>
-            </div>
-
-          </li>
-
+      <nav class="nav" data-nav aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#services" class="nav-link" data-nav-link>Services</a></li>
+          <li><a href="#work" class="nav-link" data-nav-link>Work</a></li>
+          <li><a href="#experience" class="nav-link" data-nav-link>Experience</a></li>
+          <li><a href="#stack" class="nav-link" data-nav-link>Stack</a></li>
+          <li><a href="#testimonials" class="nav-link" data-nav-link>Testimonials</a></li>
         </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>webportfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>ytportfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
+        <a href="#contact" class="btn btn-primary btn-sm nav-cta-mobile">Let's talk</a>
       </nav>
 
+      <div class="header-actions">
+        <button class="cmdk-btn" data-cmdk-open aria-label="Open quick navigation">
+          <ion-icon name="search-outline"></ion-icon>
+          <span class="cmdk-btn-text">Quick jump</span>
+          <kbd>Ctrl K</kbd>
+        </button>
+        <button class="icon-btn" data-theme-toggle aria-label="Switch to light theme">
+          <ion-icon name="sunny-outline" class="icon-sun"></ion-icon>
+          <ion-icon name="moon-outline" class="icon-moon"></ion-icon>
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm header-cta">Let's talk</a>
+        <button class="icon-btn menu-btn" data-menu-btn aria-label="Open menu" aria-expanded="false">
+          <span class="menu-lines"><span></span><span></span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
 
 
 
+  <main id="main">
 
-      <!--
-        - #ABOUT
-      -->
+    <!--
+      - #HERO
+    -->
 
-      <article class="about active" data-page="about">
+    <section class="hero" id="top">
 
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-        <section class="about-text">
-          <i>
-            <p class="h6">
-            <div style="font-family: sans-serif; line-height: 1.8; text-align: left;">
-              <ul style="list-style: none; padding-left: 0;">
-                <li>💻 <strong>Full-Stack Developer</strong> building smooth, user-friendly websites and powerful
-                  back-end systems.
-                </li>
-                <li>🎬 Managing and creating <strong>YouTube content</strong> — from faceless videos and scripts to SEO
-                  and
-                  automation.</li>
-                <li>🚀 Let’s build something <strong>amazing</strong> together!</li>
-              </ul>
-            </div>
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-grid"></div>
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="hero-spotlight" data-hero-spotlight></div>
+      </div>
 
+      <div class="container hero-inner">
 
+        <div class="hero-content">
 
-            </p>
-          </i>
+          <p class="status-pill" data-reveal>
+            <span class="status-dot"></span>
+            Available for new opportunities
+          </p>
 
+          <h1 class="hero-title" data-reveal>
+            Software that businesses <span class="gradient-text shimmer">run&nbsp;on.</span>
+          </h1>
 
-        </section>
+          <p class="typer" data-reveal aria-label="Building web apps, mobile apps, ERP systems and APIs">
+            <span class="typer-prompt" aria-hidden="true">&gt;</span>
+            <span aria-hidden="true">building</span>
+            <span class="typer-word" data-typer
+              data-words="ERP systems|web applications|mobile apps|REST &amp; GraphQL APIs|SaaS platforms"
+              aria-hidden="true">ERP systems</span><span class="typer-caret" aria-hidden="true"></span>
+          </p>
 
+          <p class="hero-text" data-reveal>
+            I'm <strong>Touseeq Zulfiqar</strong>, a Software Engineer building web apps, mobile apps and ERP
+            systems with ASP.NET, React, Vue and Laravel — clean, fast and delivered on time.
+          </p>
 
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 article-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web App Development</h4>
-
-                <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/flutter.png" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Cross platform Mobile apps</h4>
-
-                <p class="service-item-text">
-                  Development of applications for iOS and Android.
-                </p>
-              </div>
-
-            </li>
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/youtube.png" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Youtube Automation</h4>
-
-                <p class="service-item-text">
-                  Skilled in scriptwriting, voiceovers, and content creation for YouTube automation, delivering engaging
-                  and professional
-                  videos from start to finish
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-        <!-- Marquee -->
-        <h3 class="h3 article-title">Coding Technologies</h3>
-
-        <section class="logo-marquee">
-          <div class="marquee">
-            <div class="marquee-content">
-              <div></div>
-              <p class="logo-text">
-                <i class="fa-brands fa-react"></i>Native
-              </p>
-              <i class="fa-brands fa-vuejs logo" style="color: #FFFFFF;"></i>
-              <i class="fa-brands fa-react logo" style="color: #FFFFFF;"></i>
-              <div>
-                <p class="logo-text">NestJS</p>
-              </div>
-              <i class="fa-brands fa-laravel logo" style="color: #FFFFFF;"></i>
-              <i class="fa-brands fa-node logo" style="color: #FFFFFF;"></i>
-              <div>
-                <p class="logo-text">GraphQL</p>
-              </div>
-              <i class="fa-brands fa-docker logo" style="color: #FFFFFF;"></i>
-              <i class="fa-brands fa-php logo" style="color: #FFFFFF;"></i>
-              <!-- <img src="./assets/images/nextjs-icon.png" alt="Logo 6" class="logo" /> -->
-              <i class="fa-brands fa-python logo" style="color: #FFFFFF;"></i>
-            </div>
-
-            <!-- <p class="" style="color: #FFFFFF; font-style: italic; font-size: medium;"><i class="fa-brands fa-react" style="color: #FFFFFF;">React Native</i></p> -->
+          <div class="hero-actions" data-reveal>
+            <a href="#work" class="btn btn-primary btn-lg">
+              View my work
+              <ion-icon name="arrow-forward"></ion-icon>
+            </a>
+            <a href="./CV/Touseeq_zulfiqar_cv.pdf" class="btn btn-secondary btn-lg" download>
+              <ion-icon name="download-outline"></ion-icon>
+              Download CV
+            </a>
           </div>
-        </section>
-        <!--  -->
 
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Usman Ibrahim" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Usman Ibrahim</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Touseeq was hired to create a Service provider web app for my company. We were very pleased with the
-                    work done. He has a
-                    lot of experience
-                    and is very concerned about the needs of clients
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Ahmad Raza" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Ahmad Raza</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    We were very pleased with the control panel Touseeq created. He has extensive experience.
-                    and is very concerned about the needs of client.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Saqlain" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Mr. Saqlain</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    We hired Touseeq to develop a Gold shop, and his work exceeded our expectations. He possesses a
-                    wealth of experience and
-                    demonstrates a keen understanding of client needs, ensuring every detail is addressed with
-                    professionalism and care.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Muneeb</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
+          <div class="hero-meta" data-reveal>
+            <ul class="social-row">
+              <li>
+                <a href="https://www.linkedin.com/in/touseeq-zulfiqar-521510200/" target="_blank" rel="noopener"
+                  class="social-btn" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
+              </li>
+              <li>
+                <a href="https://github.com/touseeqzulfiqar" target="_blank" rel="noopener" class="social-btn"
+                  aria-label="GitHub"><ion-icon name="logo-github"></ion-icon></a>
+              </li>
+              <li>
+                <a href="mailto:touseeqzulfiqar@gmail.com" class="social-btn" aria-label="Email"><ion-icon
+                    name="mail-outline"></ion-icon></a>
+              </li>
+            </ul>
+            <span class="hero-meta-divider"></span>
+            <p class="hero-location">
+              <ion-icon name="location-outline"></ion-icon>
+              Punjab, Pakistan · Remote &amp; relocation
+            </p>
+          </div>
 
         </div>
 
-
-
-      </article>
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-            <button class="form-btn" type="submit" onclick="window.location.href='CV/Touseeq_zulfiqar_cv.pdf';">>
-              <span>Download Resume</span>
-              <ion-icon name="arrow-down"></ion-icon>
-            </button>
+        <div class="hero-visual" data-reveal>
+          <div class="portrait" data-tilt>
+            <div class="portrait-ring"></div>
+            <img src="./assets/images/touseeq.jpg" alt="Portrait of Touseeq Zulfiqar" width="720" height="833">
           </div>
 
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">University of Gujrat</h4>
-
-              <span>2019 -- 2023</span>
-
-              <p class="timeline-text">
-                Bachelors of Information Technology
-              </p>
-
-            </li>
-
-
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+          <div class="float-card float-card-1">
+            <span class="float-icon"><ion-icon name="flash"></ion-icon></span>
+            <div>
+              <p class="float-value">40% faster</p>
+              <p class="float-label">MySQL query performance</p>
             </div>
-
-            <h3 class="h3">Experience</h3>
           </div>
 
-          <ol class="timeline-list">
+          <div class="float-card float-card-2">
+            <span class="float-icon float-icon-green"><ion-icon name="pulse"></ion-icon></span>
+            <div>
+              <p class="float-value">Live ERP</p>
+              <p class="float-label">Maintained in production</p>
+            </div>
+          </div>
 
-            <li class="timeline-item">
+          <div class="float-code" aria-hidden="true">
+            <span class="c-key">const</span> <span class="c-var">touseeq</span> = {<br>
+            &nbsp;&nbsp;role: <span class="c-str">'Software Engineer'</span>,<br>
+            &nbsp;&nbsp;ships: <span class="c-bool">true</span><br>
+            }
+          </div>
+        </div>
 
-              <h4 class="h4 timeline-item-title">Software Engineer</h4>
-
-              <span>AlimcoSoft (SMC) Private limited</span>
-              <span>2024/08 — Present</span>
-
-              <ol class="timeline-text">
-                <li>Developed cross-platform mobile applications using React Native for both iOS and Android platforms
-                </li>
-                <li>Built scalable RESTful and GraphQL APIs using NestJS, including authentication and data handling
-                </li>
-                <li>Managed PostgreSQL databases and optimized complex queries using Sequelize ORM</li>
-                <li>Designed efficient PostgreSQL schemas to maintain data integrity and enhance performance</li>
-              </ol>
-
-
-
-            </li>
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Fullstack Developer</h4>
-
-              <span>BOSON Studio</span>
-              <span>2024/02 — 2024/08</span>
-
-              <ul class="timeline-text">
-                <li>Developed web applications using Vue.js, Laravel, and MySQL</li>
-                <li>Designed RESTful APIs with Laravel to enable smooth frontend-backend communication</li>
-                <li>Optimized MySQL queries, boosting performance by 40%</li>
-                <li>Collaborated with the team to resolve technical issues and meet project deadlines</li>
-              </ul>
-
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Intern</h4>
-
-              <span>2023/10 — 2024/01</span>
-
-              <ul class="timeline-text">
-                <li>Utilized HTML, CSS, PHP & JavaScript to design and implement website layouts, backend, and data
-                  storage through
-                  MySQL</li>
-                <li>Collaborated with a team of designers, testers, and developers to create visually appealing and
-                  user-friendly web
-                  apps for clients</li>
-                <li>Contributed to Role & Permission website, Gold Shop, POS, and many more projects</li>
-              </ul>
-
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-          <h3 class="h3 skills-title">My Skills</h3>
-
-          <ul class="skills-list content-card">
-            <!-- First row -->
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">MERN Stack</h5>
-                <data value="85">85%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">React Native</h5>
-                <data value="75">75%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-            </li>
-
-            <!-- Second row -->
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Vue.js (2 & 3)</h5>
-                <data value="85">85%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Laravel</h5>
-                <data value="85">85%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-            </li>
-
-            <!-- Third row -->
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">GraphQL</h5>
-                <data value="70">70%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-            </li>
-
-            <!-- Fourth row -->
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">NestJS</h5>
-                <data value="65">65%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 65%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Flutter (Basic)</h5>
-                <data value="50">50%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-            </li>
-
-            <!-- Fifth row -->
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Python (ML, Keras, TensorFlow)</h5>
-                <data value="60">60%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 60%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Tailwind CSS</h5>
-                <data value="70">70%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-            </li>
-
-            <!-- Sixth row -->
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Bootstrap / Ionic</h5>
-                <data value="75">75%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">JavaScript</h5>
-                <data value="80">80%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-            </li>
-
-            <!-- Seventh row -->
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">jQuery / AJAX</h5>
-                <data value="70">70%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-            </li>
-          </ul>
-        </section>
-
-
-
-      </article>
-
-
-
-
+      </div>
 
       <!--
-        - #PORTFOLIO
+        - stats
       -->
 
-      <article class="portfolio" data-page="webportfolio">
+      <div class="container">
+        <ul class="stats" data-reveal>
+          <li class="stat">
+            <p class="stat-value"><span data-count data-years-since="2023-10">2</span>+</p>
+            <p class="stat-label">Years building software</p>
+          </li>
+          <li class="stat">
+            <p class="stat-value"><span data-count="7">7</span>+</p>
+            <p class="stat-label">Projects delivered</p>
+          </li>
+          <li class="stat">
+            <p class="stat-value"><span data-count="3">3</span></p>
+            <p class="stat-label">Companies</p>
+          </li>
+          <li class="stat">
+            <p class="stat-value"><span data-count="15">15</span>+</p>
+            <p class="stat-label">Technologies</p>
+          </li>
+        </ul>
 
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
+        <div class="trusted" data-reveal>
+          <p class="trusted-label">Experience at</p>
+          <ul class="trusted-list">
+            <li>GLOWSIMS</li>
+            <li>AlimcoSoft</li>
+            <li>BOSON Studio</li>
+            <li>University of Gujrat</li>
           </ul>
+        </div>
+      </div>
 
-          <div class="filter-select-box">
+      <!--
+        - tech marquee
+      -->
 
-            <button class="filter-select" data-select>
+      <div class="marquee" aria-label="Technologies I use" data-reveal>
+        <ul class="marquee-track">
+          <li><i class="devicon-dot-net-plain colored"></i> ASP.NET</li>
+          <li><i class="devicon-csharp-plain colored"></i> C#</li>
+          <li><i class="devicon-react-original colored"></i> React</li>
+          <li><i class="devicon-vuejs-plain colored"></i> Vue.js</li>
+          <li><i class="devicon-laravel-original colored"></i> Laravel</li>
+          <li><i class="devicon-nestjs-original colored"></i> NestJS</li>
+          <li><i class="devicon-graphql-plain colored"></i> GraphQL</li>
+          <li><i class="devicon-microsoftsqlserver-plain colored"></i> SQL Server</li>
+          <li><i class="devicon-postgresql-plain colored"></i> PostgreSQL</li>
+          <li><i class="devicon-mysql-original colored"></i> MySQL</li>
+          <li><i class="devicon-flutter-plain colored"></i> Flutter</li>
+          <li><i class="devicon-python-plain colored"></i> Python</li>
+          <li><i class="devicon-tensorflow-original colored"></i> TensorFlow</li>
+          <li><i class="devicon-git-plain colored"></i> Git</li>
+        </ul>
+        <ul class="marquee-track" aria-hidden="true">
+          <li><i class="devicon-dot-net-plain colored"></i> ASP.NET</li>
+          <li><i class="devicon-csharp-plain colored"></i> C#</li>
+          <li><i class="devicon-react-original colored"></i> React</li>
+          <li><i class="devicon-vuejs-plain colored"></i> Vue.js</li>
+          <li><i class="devicon-laravel-original colored"></i> Laravel</li>
+          <li><i class="devicon-nestjs-original colored"></i> NestJS</li>
+          <li><i class="devicon-graphql-plain colored"></i> GraphQL</li>
+          <li><i class="devicon-microsoftsqlserver-plain colored"></i> SQL Server</li>
+          <li><i class="devicon-postgresql-plain colored"></i> PostgreSQL</li>
+          <li><i class="devicon-mysql-original colored"></i> MySQL</li>
+          <li><i class="devicon-flutter-plain colored"></i> Flutter</li>
+          <li><i class="devicon-python-plain colored"></i> Python</li>
+          <li><i class="devicon-tensorflow-original colored"></i> TensorFlow</li>
+          <li><i class="devicon-git-plain colored"></i> Git</li>
+        </ul>
+      </div>
 
-              <div class="select-value" data-selecct-value>Select category</div>
+    </section>
 
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
+
+
+    <!--
+      - #SERVICES
+    -->
+
+    <section class="section" id="services">
+      <div class="container">
+
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">01 — Services</p>
+          <h2 class="section-title">What I can do <span class="gradient-text">for you</span></h2>
+          <p class="section-text">
+            From the first screen to the database behind it, I cover the full stack — so your product is
+            built consistently, end to end.
+          </p>
+        </div>
+
+        <ul class="services-grid">
+
+          <li class="service-card card" data-reveal>
+            <div class="service-icon"><ion-icon name="globe-outline"></ion-icon></div>
+            <h3 class="card-title">Web Applications</h3>
+            <p class="card-text">
+              Fast, responsive web apps and dashboards that feel effortless to use and scale with your business.
+            </p>
+            <ul class="mini-tags">
+              <li>React</li><li>Vue.js</li><li>Laravel</li><li>ASP.NET</li>
+            </ul>
+          </li>
+
+          <li class="service-card card" data-reveal>
+            <div class="service-icon"><ion-icon name="phone-portrait-outline"></ion-icon></div>
+            <h3 class="card-title">Mobile Apps</h3>
+            <p class="card-text">
+              Cross-platform iOS and Android apps from a single codebase — faster to build, easier to maintain.
+            </p>
+            <ul class="mini-tags">
+              <li>React Native</li><li>Flutter</li><li>Firebase</li>
+            </ul>
+          </li>
+
+          <li class="service-card card" data-reveal>
+            <div class="service-icon"><ion-icon name="server-outline"></ion-icon></div>
+            <h3 class="card-title">APIs &amp; Databases</h3>
+            <p class="card-text">
+              Secure REST and GraphQL APIs on well-designed schemas, with queries tuned for real-world load.
+            </p>
+            <ul class="mini-tags">
+              <li>NestJS</li><li>GraphQL</li><li>SQL Server</li><li>PostgreSQL</li>
+            </ul>
+          </li>
+
+          <li class="service-card card" data-reveal>
+            <div class="service-icon"><ion-icon name="business-outline"></ion-icon></div>
+            <h3 class="card-title">ERP &amp; Business Systems</h3>
+            <p class="card-text">
+              ERP modules, POS, SaaS platforms and role-based admin panels that keep daily operations running.
+            </p>
+            <ul class="mini-tags">
+              <li>ASP.NET MVC</li><li>Multi-tenant</li><li>RBAC</li>
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+
+
+    <!--
+      - #WORK
+    -->
+
+    <section class="section" id="work">
+      <div class="container">
+
+        <div class="section-head section-head-row" data-reveal>
+          <div>
+            <p class="eyebrow">02 — Selected Work</p>
+            <h2 class="section-title">Projects I've <span class="gradient-text">built</span></h2>
+          </div>
+          <div class="filters" role="tablist" aria-label="Filter projects">
+            <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+            <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web</button>
+            <button class="filter-btn" data-filter="mobile" role="tab" aria-selected="false">Mobile &amp; AI</button>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- featured: current role -->
+          <article class="project project-featured project-featured-reverse card" data-category="web"
+            data-project="glowsims" data-reveal>
+            <div class="project-visual visual-green">
+              <div class="browser">
+                <div class="browser-bar"><span></span><span></span><span></span>
+                  <p class="browser-url">GlowSIMS · ERP</p>
+                </div>
+                <div class="erp" aria-hidden="true">
+                  <div class="erp-side">
+                    <span class="erp-logo">GS</span>
+                    <span class="erp-nav active"></span>
+                    <span class="erp-nav"></span>
+                    <span class="erp-nav"></span>
+                    <span class="erp-nav"></span>
+                    <span class="erp-nav"></span>
+                  </div>
+                  <div class="erp-main">
+                    <div class="erp-top">
+                      <p class="erp-title">Dashboard</p>
+                      <span class="erp-live"><span class="erp-live-dot"></span> Live</span>
+                    </div>
+                    <div class="erp-kpis">
+                      <div class="erp-kpi">
+                        <ion-icon name="people-outline"></ion-icon>
+                        <p>Students</p><span></span>
+                      </div>
+                      <div class="erp-kpi">
+                        <ion-icon name="wallet-outline"></ion-icon>
+                        <p>Fees</p><span></span>
+                      </div>
+                      <div class="erp-kpi">
+                        <ion-icon name="calendar-outline"></ion-icon>
+                        <p>Attendance</p><span></span>
+                      </div>
+                    </div>
+                    <div class="erp-panels">
+                      <div class="erp-chart">
+                        <span style="--h:45%"></span><span style="--h:70%"></span><span style="--h:58%"></span>
+                        <span style="--h:85%"></span><span style="--h:66%"></span><span style="--h:92%"></span>
+                        <span style="--h:74%"></span><span style="--h:80%"></span>
+                      </div>
+                      <div class="erp-rows">
+                        <p><span></span><em class="ok">Paid</em></p>
+                        <p><span></span><em class="ok">Paid</em></p>
+                        <p><span></span><em class="wait">Pending</em></p>
+                        <p><span></span><em class="ok">Paid</em></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+            </div>
+            <div class="project-body">
+              <p class="project-kicker"><span class="kicker-dot kicker-dot-green"></span> Current role · Education ERP</p>
+              <h3 class="project-title">GLOWSIMS ERP</h3>
+              <p class="project-text">
+                A live ERP platform from GLOWSIMS Educational Services, used in real time every day. I maintain and
+                extend it, build new modules, and keep it stable for the people who depend on it.
+              </p>
+              <ul class="project-points">
+                <li><ion-icon name="checkmark-circle"></ion-icon> Live production system, used in real time</li>
+                <li><ion-icon name="checkmark-circle"></ion-icon> New &amp; improved ERP modules</li>
+                <li><ion-icon name="checkmark-circle"></ion-icon> Fast production issue resolution</li>
+              </ul>
+              <ul class="tags">
+                <li>ASP.NET MVC</li><li>C#</li><li>SQL Server</li>
+              </ul>
+              <button class="details-btn" data-project-open="glowsims">
+                View case study <ion-icon name="arrow-forward"></ion-icon>
+              </button>
+            </div>
+          </article>
 
-            </button>
+          <article class="project project-featured card" data-category="web" data-project="saas" data-reveal>
+            <div class="project-visual visual-blue">
+              <div class="browser">
+                <div class="browser-bar"><span></span><span></span><span></span>
+                  <p class="browser-url">app.serviceprovider.saas</p>
+                </div>
+                <img src="./assets/images/project-10.png" alt="Service Provider SaaS dashboard" loading="lazy">
+              </div>
+            </div>
+            <div class="project-body">
+              <p class="project-kicker"><span class="kicker-dot"></span> Featured · SaaS Platform</p>
+              <h3 class="project-title">Service Provider SaaS</h3>
+              <p class="project-text">
+                A multi-tenant SaaS where every tenant gets its own tailored views, admins control roles &amp;
+                permissions, and the architecture guarantees strict data isolation between businesses.
+              </p>
+              <ul class="project-points">
+                <li><ion-icon name="checkmark-circle"></ion-icon> Multi-tenant architecture</li>
+                <li><ion-icon name="checkmark-circle"></ion-icon> Admin-controlled RBAC</li>
+                <li><ion-icon name="checkmark-circle"></ion-icon> Per-tenant data isolation</li>
+              </ul>
+              <ul class="tags">
+                <li>Vue.js</li><li>Laravel</li><li>MySQL</li>
+              </ul>
+              <button class="details-btn" data-project-open="saas">
+                View case study <ion-icon name="arrow-forward"></ion-icon>
+              </button>
+            </div>
+          </article>
 
-            <ul class="select-list">
+          <article class="project card" data-category="web" data-project="hazrify" data-reveal>
+            <div class="project-visual visual-violet">
+              <div class="mock mock-attendance">
+                <div class="mock-row">
+                  <span class="mock-avatar"></span>
+                  <div>
+                    <p class="mock-strong">Checked in</p>
+                    <p class="mock-muted">Today · 09:02 AM</p>
+                  </div>
+                  <span class="mock-badge mock-badge-green">On time</span>
+                </div>
+                <div class="mock-bars">
+                  <span style="--h:55%"></span><span style="--h:80%"></span><span style="--h:65%"></span>
+                  <span style="--h:92%"></span><span style="--h:74%"></span><span style="--h:40%"></span>
+                  <span style="--h:86%"></span>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <p class="project-kicker">HR · Web App</p>
+              <h3 class="project-title">Hazrify</h3>
+              <p class="project-text">
+                Attendance &amp; leave management with real-time check-ins, reporting and role-based access for
+                admins and employees.
+              </p>
+              <ul class="tags">
+                <li>React</li><li>NestJS</li><li>GraphQL</li><li>MySQL</li>
+              </ul>
+              <button class="details-btn" data-project-open="hazrify">
+                View case study <ion-icon name="arrow-forward"></ion-icon>
+              </button>
+            </div>
+          </article>
 
-              <li class="select-item">
-                <button data-select-item>All</button>
+          <article class="project card" data-category="mobile" data-project="lumpycare" data-reveal>
+            <div class="project-visual visual-teal">
+              <div class="mock mock-phone">
+                <div class="phone-notch"></div>
+                <div class="phone-scan">
+                  <ion-icon name="scan-outline"></ion-icon>
+                </div>
+                <p class="mock-strong">Analyzing image…</p>
+                <div class="mock-progress"><span></span></div>
+                <p class="mock-muted">CNN model · GraphQL</p>
+              </div>
+            </div>
+            <div class="project-body">
+              <p class="project-kicker">Mobile · AI</p>
+              <h3 class="project-title">LumpyCare</h3>
+              <p class="project-text">
+                Mobile app that detects lumpy skin disease in cattle from a photo using a CNN image-recognition
+                model, with Firebase-backed user data.
+              </p>
+              <ul class="tags">
+                <li>React Native</li><li>Firebase</li><li>GraphQL</li><li>CNN</li>
+              </ul>
+              <button class="details-btn" data-project-open="lumpycare">
+                View case study <ion-icon name="arrow-forward"></ion-icon>
+              </button>
+            </div>
+          </article>
+
+          <article class="project card" data-category="web" data-project="pos" data-reveal>
+            <div class="project-visual visual-indigo">
+              <div class="mock mock-receipt">
+                <p class="mock-strong">Order #1042</p>
+                <p class="receipt-line"><span>Items (3)</span><span>2,450</span></p>
+                <p class="receipt-line"><span>Tax</span><span>196</span></p>
+                <p class="receipt-line receipt-total"><span>Total</span><span>2,646</span></p>
+                <span class="mock-badge mock-badge-blue">Paid</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <p class="project-kicker">Retail · Web App</p>
+              <h3 class="project-title">Point of Sale</h3>
+              <p class="project-text">
+                POS system with inventory management, billing and sales reporting, powered by a RESTful API.
+              </p>
+              <ul class="tags">
+                <li>Vue.js</li><li>Laravel</li><li>REST API</li><li>MySQL</li>
+              </ul>
+              <button class="details-btn" data-project-open="pos">
+                View case study <ion-icon name="arrow-forward"></ion-icon>
+              </button>
+            </div>
+          </article>
+
+          <article class="project card" data-category="web" data-project="bugzilla" data-reveal>
+            <div class="project-visual visual-rose">
+              <div class="mock mock-kanban">
+                <div class="kanban-col">
+                  <p>Open</p><span></span><span></span><span class="short"></span>
+                </div>
+                <div class="kanban-col">
+                  <p>In QA</p><span class="accent"></span><span class="short"></span>
+                </div>
+                <div class="kanban-col">
+                  <p>Done</p><span class="done"></span><span class="done"></span><span class="done short"></span>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <p class="project-kicker">Productivity · Web App</p>
+              <h3 class="project-title">Bugzilla</h3>
+              <p class="project-text">
+                Issue tracker with dedicated Manager, Developer and QA workflows, covered by RSpec tests.
+              </p>
+              <ul class="tags">
+                <li>Ruby on Rails</li><li>React</li><li>PostgreSQL</li><li>RSpec</li>
+              </ul>
+              <button class="details-btn" data-project-open="bugzilla">
+                View case study <ion-icon name="arrow-forward"></ion-icon>
+              </button>
+            </div>
+          </article>
+
+          <article class="project card" data-category="web" data-project="flour" data-reveal>
+            <div class="project-visual visual-amber">
+              <div class="mock mock-terminal">
+                <p><span class="t-green">✓</span> query optimized</p>
+                <p><span class="t-green">✓</span> feature shipped</p>
+                <p><span class="t-green">✓</span> bug fixed</p>
+                <p class="t-dim">$ deploy --production<span class="caret"></span></p>
+              </div>
+            </div>
+            <div class="project-body">
+              <p class="project-kicker">Maintenance · Web App</p>
+              <h3 class="project-title">Flour Web</h3>
+              <p class="project-text">
+                Optimized slow synchronous queries, shipped new features and fixed stability bugs in a production
+                Rails application.
+              </p>
+              <ul class="tags">
+                <li>Ruby on Rails</li><li>HAML</li><li>PostgreSQL</li>
+              </ul>
+              <button class="details-btn" data-project-open="flour">
+                View case study <ion-icon name="arrow-forward"></ion-icon>
+              </button>
+            </div>
+          </article>
+
+          <a href="#contact" class="project project-cta card" data-category="all" data-reveal>
+            <span class="cta-icon"><ion-icon name="add"></ion-icon></span>
+            <h3 class="project-title">Your project could be next</h3>
+            <p class="project-text">
+              Have an idea, a product or a role in mind? Let's talk about how I can help bring it to life.
+            </p>
+            <span class="cta-link">Start a conversation <ion-icon name="arrow-forward"></ion-icon></span>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!--
+      - #EXPERIENCE
+    -->
+
+    <section class="section" id="experience">
+      <div class="container experience-layout">
+
+        <div class="section-head sticky-head" data-reveal>
+          <p class="eyebrow">03 — Experience</p>
+          <h2 class="section-title">Where I've <span class="gradient-text">made impact</span></h2>
+          <p class="section-text">
+            Three companies, one constant: shipping software that real people depend on every day.
+          </p>
+          <a href="./CV/Touseeq_zulfiqar_cv.pdf" class="btn btn-secondary" download>
+            <ion-icon name="document-text-outline"></ion-icon>
+            Full résumé (PDF)
+          </a>
+
+          <div class="edu-card card">
+            <div class="edu-icon"><ion-icon name="school-outline"></ion-icon></div>
+            <div>
+              <p class="edu-degree">BS Information Technology</p>
+              <p class="edu-school">University of Gujrat · 2019 — 2023</p>
+            </div>
+          </div>
+        </div>
+
+        <ol class="timeline">
+
+          <li class="job card" data-reveal>
+            <div class="job-head">
+              <div>
+                <h3 class="job-role">Software Engineer <span class="now-badge">Now</span></h3>
+                <p class="job-company">GLOWSIMS Educational Services (Pvt.) Ltd.</p>
+              </div>
+              <p class="job-date">Aug 2025 — Present</p>
+            </div>
+            <ul class="job-points">
+              <li>Maintain and enhance a <strong>live ERP system</strong> used by businesses in real time,
+                keeping daily operations stable.</li>
+              <li>Diagnose and resolve production issues quickly, delivering effective fixes to end-users.</li>
+              <li>Build and improve ERP modules with ASP.NET MVC and SQL Server for better performance and
+                usability.</li>
+              <li>Translate stakeholder requirements into scalable technical solutions.</li>
+            </ul>
+            <ul class="tags">
+              <li>ASP.NET MVC</li><li>C#</li><li>SQL Server</li><li>ERP</li>
+            </ul>
+          </li>
+
+          <li class="job card" data-reveal>
+            <div class="job-head">
+              <div>
+                <h3 class="job-role">Software Engineer</h3>
+                <p class="job-company">AlimcoSoft (SMC) Pvt. Ltd. · Islamabad</p>
+              </div>
+              <p class="job-date">Aug 2024 — Aug 2025</p>
+            </div>
+            <ul class="job-points">
+              <li>Built <strong>cross-platform mobile apps</strong> for iOS and Android with React Native.</li>
+              <li>Developed scalable REST and GraphQL APIs with NestJS, including authentication and data
+                management.</li>
+              <li>Designed efficient SQL schemas and optimized complex queries.</li>
+            </ul>
+            <ul class="tags">
+              <li>React Native</li><li>NestJS</li><li>GraphQL</li><li>PostgreSQL</li>
+            </ul>
+          </li>
+
+          <li class="job card" data-reveal>
+            <div class="job-head">
+              <div>
+                <h3 class="job-role">Full-Stack Developer</h3>
+                <p class="job-company">BOSON Studio</p>
+              </div>
+              <p class="job-date">Feb 2024 — Aug 2024</p>
+            </div>
+            <ul class="job-points">
+              <li>Developed web applications with Vue.js, Laravel and MySQL.</li>
+              <li>Designed RESTful APIs in Laravel for seamless frontend–backend communication.</li>
+              <li>Optimized MySQL queries, <strong>improving performance by 40%</strong>.</li>
+            </ul>
+            <ul class="tags">
+              <li>Vue.js</li><li>Laravel</li><li>MySQL</li><li>REST API</li>
+            </ul>
+          </li>
+
+          <li class="job card" data-reveal>
+            <div class="job-head">
+              <div>
+                <h3 class="job-role">Web Development Intern</h3>
+                <p class="job-company">BOSON Studio</p>
+              </div>
+              <p class="job-date">Oct 2023 — Jan 2024</p>
+            </div>
+            <ul class="job-points">
+              <li>Built layouts, backends and MySQL storage with HTML, CSS, PHP and JavaScript.</li>
+              <li>Contributed to a role &amp; permission system, a gold shop system, a POS and more.</li>
+            </ul>
+            <ul class="tags">
+              <li>PHP</li><li>JavaScript</li><li>MySQL</li>
+            </ul>
+          </li>
+
+        </ol>
+
+      </div>
+    </section>
+
+
+
+    <!--
+      - #STACK
+    -->
+
+    <section class="section" id="stack">
+      <div class="container">
+
+        <div class="section-head section-head-center" data-reveal>
+          <p class="eyebrow">04 — Tech Stack</p>
+          <h2 class="section-title">Tools I use to <span class="gradient-text">ship</span></h2>
+          <p class="section-text">The right tool for each job — chosen for reliability, not hype.</p>
+        </div>
+
+        <div class="stack-grid">
+
+          <div class="stack-group card" data-reveal>
+            <h3 class="stack-title"><ion-icon name="browsers-outline"></ion-icon> Frontend</h3>
+            <ul class="stack-list">
+              <li><i class="devicon-react-original colored"></i> React</li>
+              <li><i class="devicon-vuejs-plain colored"></i> Vue.js</li>
+              <li><i class="devicon-javascript-plain colored"></i> JavaScript</li>
+              <li><i class="devicon-tailwindcss-original colored"></i> Tailwind</li>
+              <li><i class="devicon-bootstrap-plain colored"></i> Bootstrap</li>
+              <li><i class="devicon-jquery-plain colored"></i> jQuery</li>
+            </ul>
+          </div>
+
+          <div class="stack-group card" data-reveal>
+            <h3 class="stack-title"><ion-icon name="server-outline"></ion-icon> Backend</h3>
+            <ul class="stack-list">
+              <li><i class="devicon-dot-net-plain colored"></i> ASP.NET</li>
+              <li><i class="devicon-csharp-plain colored"></i> C#</li>
+              <li><i class="devicon-laravel-original colored"></i> Laravel</li>
+              <li><i class="devicon-nestjs-original colored"></i> NestJS</li>
+              <li><i class="devicon-nodejs-plain colored"></i> Node.js</li>
+              <li><i class="devicon-rails-plain colored"></i> Rails</li>
+              <li><i class="devicon-graphql-plain colored"></i> GraphQL</li>
+              <li><i class="devicon-php-plain colored"></i> PHP</li>
+            </ul>
+          </div>
+
+          <div class="stack-group card" data-reveal>
+            <h3 class="stack-title"><ion-icon name="layers-outline"></ion-icon> Databases</h3>
+            <ul class="stack-list">
+              <li><i class="devicon-microsoftsqlserver-plain colored"></i> SQL Server</li>
+              <li><i class="devicon-mysql-original colored"></i> MySQL</li>
+              <li><i class="devicon-postgresql-plain colored"></i> PostgreSQL</li>
+              <li><i class="devicon-mongodb-plain colored"></i> MongoDB</li>
+            </ul>
+          </div>
+
+          <div class="stack-group card" data-reveal>
+            <h3 class="stack-title"><ion-icon name="phone-portrait-outline"></ion-icon> Mobile &amp; AI</h3>
+            <ul class="stack-list">
+              <li><i class="devicon-react-original colored"></i> React Native</li>
+              <li><i class="devicon-flutter-plain colored"></i> Flutter</li>
+              <li><i class="devicon-firebase-plain colored"></i> Firebase</li>
+              <li><i class="devicon-python-plain colored"></i> Python</li>
+              <li><i class="devicon-tensorflow-original colored"></i> TensorFlow</li>
+            </ul>
+          </div>
+
+          <div class="stack-group card" data-reveal>
+            <h3 class="stack-title"><ion-icon name="construct-outline"></ion-icon> Tools</h3>
+            <ul class="stack-list">
+              <li><i class="devicon-git-plain colored"></i> Git</li>
+              <li><i class="devicon-github-original"></i> GitHub</li>
+              <li><i class="devicon-linux-plain"></i> Linux</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!--
+      - #PROCESS
+    -->
+
+    <section class="section section-tight" id="process">
+      <div class="container">
+
+        <div class="section-head section-head-center" data-reveal>
+          <p class="eyebrow">05 — How I Work</p>
+          <h2 class="section-title">A simple process, <span class="gradient-text">no surprises</span></h2>
+        </div>
+
+        <ol class="process">
+          <li class="process-step" data-reveal>
+            <span class="step-num">01</span>
+            <h3 class="card-title">Understand</h3>
+            <p class="card-text">I listen first — goals, users and constraints — before writing a single line.</p>
+          </li>
+          <li class="process-step" data-reveal>
+            <span class="step-num">02</span>
+            <h3 class="card-title">Plan</h3>
+            <p class="card-text">A clear scope, architecture and timeline you can hold me to.</p>
+          </li>
+          <li class="process-step" data-reveal>
+            <span class="step-num">03</span>
+            <h3 class="card-title">Build</h3>
+            <p class="card-text">Clean, tested code with regular updates so you always know where things stand.</p>
+          </li>
+          <li class="process-step" data-reveal>
+            <span class="step-num">04</span>
+            <h3 class="card-title">Ship &amp; support</h3>
+            <p class="card-text">Deployed, documented and supported — I stay until it runs smoothly.</p>
+          </li>
+        </ol>
+
+      </div>
+    </section>
+
+
+
+    <!--
+      - #TESTIMONIALS
+    -->
+
+    <section class="section" id="testimonials">
+      <div class="container">
+
+        <div class="section-head section-head-center" data-reveal>
+          <p class="eyebrow">06 — Testimonials</p>
+          <h2 class="section-title">What clients <span class="gradient-text">say</span></h2>
+        </div>
+
+        <ul class="testimonials">
+
+          <li class="testimonial card" data-reveal>
+            <ion-icon name="chatbox-ellipses-outline" class="quote-icon"></ion-icon>
+            <blockquote>
+              “Touseeq built a service provider web app for my company and we were very pleased with the result.
+              He is highly experienced and genuinely cares about what the client needs.”
+            </blockquote>
+            <div class="author">
+              <span class="author-avatar">UI</span>
+              <div>
+                <p class="author-name">Usman Ibrahim</p>
+                <p class="author-role">Client · Service Provider SaaS</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="testimonial card" data-reveal>
+            <ion-icon name="chatbox-ellipses-outline" class="quote-icon"></ion-icon>
+            <blockquote>
+              “We were very pleased with the control panel Touseeq created. He has extensive experience and is
+              very attentive to the client's needs.”
+            </blockquote>
+            <div class="author">
+              <span class="author-avatar">AR</span>
+              <div>
+                <p class="author-name">Ahmad Raza</p>
+                <p class="author-role">Client · Admin Control Panel</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="testimonial card" data-reveal>
+            <ion-icon name="chatbox-ellipses-outline" class="quote-icon"></ion-icon>
+            <blockquote>
+              “His work on our gold shop system exceeded our expectations. He understands client needs and
+              handles every detail with professionalism and care.”
+            </blockquote>
+            <div class="author">
+              <span class="author-avatar">S</span>
+              <div>
+                <p class="author-name">Mr. Saqlain</p>
+                <p class="author-role">Client · Gold Shop System</p>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+
+
+    <!--
+      - #FAQ
+    -->
+
+    <section class="section section-tight" id="faq">
+      <div class="container faq-layout">
+
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">07 — FAQ</p>
+          <h2 class="section-title">Questions, <span class="gradient-text">answered</span></h2>
+          <p class="section-text">The things people usually ask before reaching out.</p>
+        </div>
+
+        <div class="faq-list">
+
+          <details class="faq-item" data-reveal open>
+            <summary>Are you open to full-time roles?<span class="faq-icon" aria-hidden="true"></span></summary>
+            <p>Yes. I'm currently open to new opportunities — remote or on-site — and I'm happy to relocate for the
+              right role.</p>
+          </details>
+
+          <details class="faq-item" data-reveal>
+            <summary>Do you take freelance projects?<span class="faq-icon" aria-hidden="true"></span></summary>
+            <p>Yes — web apps, mobile apps, dashboards and business systems. Share your idea and timeline and I'll
+              tell you honestly how I can help.</p>
+          </details>
+
+          <details class="faq-item" data-reveal>
+            <summary>What's your main tech stack?<span class="faq-icon" aria-hidden="true"></span></summary>
+            <p>Day to day I work with ASP.NET MVC and SQL Server. I've also shipped production work with React,
+              React Native, Vue.js, Laravel and NestJS.</p>
+          </details>
+
+          <details class="faq-item" data-reveal>
+            <summary>Can you work with my time zone?<span class="faq-icon" aria-hidden="true"></span></summary>
+            <p>I'm based in Pakistan (PKT, UTC+5). For remote work I'm happy to agree on overlapping hours with your
+              team.</p>
+          </details>
+
+          <details class="faq-item" data-reveal>
+            <summary>How do we get started?<span class="faq-icon" aria-hidden="true"></span></summary>
+            <p>Send a message with the form below or email me directly. Tell me about the role or project and we'll
+              set up a quick call to talk it through.</p>
+          </details>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!--
+      - #CONTACT
+    -->
+
+    <section class="section" id="contact">
+      <div class="container">
+
+        <div class="contact-panel" data-reveal>
+
+          <div class="contact-info">
+            <p class="eyebrow">08 — Contact</p>
+            <h2 class="section-title">Let's build something <span class="gradient-text">great together.</span></h2>
+            <p class="section-text">
+              Hiring for a role or planning a project? Send a message — I read every one and reply personally.
+            </p>
+
+            <ul class="contact-list">
+              <li class="contact-row">
+                <a href="mailto:touseeqzulfiqar@gmail.com" class="contact-item">
+                  <span class="contact-icon"><ion-icon name="mail-outline"></ion-icon></span>
+                  <span>
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">touseeqzulfiqar@gmail.com</span>
+                  </span>
+                </a>
+                <button class="copy-btn" data-copy="touseeqzulfiqar@gmail.com" aria-label="Copy email address">
+                  <ion-icon name="copy-outline"></ion-icon>
+                </button>
               </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
+              <li>
+                <a href="tel:+923026576657" class="contact-item">
+                  <span class="contact-icon"><ion-icon name="call-outline"></ion-icon></span>
+                  <span>
+                    <span class="contact-label">Phone</span>
+                    <span class="contact-value">+92 302 6576657</span>
+                  </span>
+                </a>
               </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
+              <li>
+                <a href="https://www.linkedin.com/in/touseeq-zulfiqar-521510200/" target="_blank" rel="noopener"
+                  class="contact-item">
+                  <span class="contact-icon"><ion-icon name="logo-linkedin"></ion-icon></span>
+                  <span>
+                    <span class="contact-label">LinkedIn</span>
+                    <span class="contact-value">in/touseeq-zulfiqar</span>
+                  </span>
+                </a>
               </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
             </ul>
 
+            <div class="local-time">
+              <span class="status-dot"></span>
+              <p>My local time is <strong data-local-time>—</strong> <span class="local-tz">(PKT, UTC+5)</span></p>
+            </div>
           </div>
 
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-10.png" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Service Provider </h3>
-
-                <p class="project-category">Sass</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-<article class="blog" data-page="ytportfolio">
-
-  <header>
-    <h2 class="h2 article-title">Blog</h2>
-  </header>
-
-  <section class="blog-posts">
-
-    <ul class="blog-posts-list">
-
-      <li class="blog-post-item">
-        <a href="#">
-
-          <figure class="blog-banner-box">
-            <iframe width="100%" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-              title="Design conferences in 2022" frameborder="0" allowfullscreen loading="lazy"></iframe>
-          </figure>
-
-          <div class="blog-content">
-            <div class="blog-meta">
-              <p class="blog-category">Design</p>
-              <span class="dot"></span>
-              <time datetime="2022-02-23">Feb 23, 2022</time>
+          <form action="https://formspree.io/f/mnnvvjdn" method="POST" class="contact-form" data-form>
+
+            <div class="form-row">
+              <label class="field">
+                <span class="field-label">Your name</span>
+                <input type="text" name="fullname" class="input" placeholder="Jane Doe" autocomplete="name"
+                  required>
+              </label>
+              <label class="field">
+                <span class="field-label">Email</span>
+                <input type="email" name="email" class="input" placeholder="jane@company.com" autocomplete="email"
+                  required>
+              </label>
             </div>
 
-            <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-            <p class="blog-text">
-              Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-            </p>
-          </div>
+            <fieldset class="field">
+              <legend class="field-label">I'm interested in</legend>
+              <div class="choice-row">
+                <label class="choice"><input type="radio" name="topic" value="Full-time role" checked><span>Full-time
+                    role</span></label>
+                <label class="choice"><input type="radio" name="topic" value="Freelance project"><span>Freelance
+                    project</span></label>
+                <label class="choice"><input type="radio" name="topic" value="Something else"><span>Something
+                    else</span></label>
+              </div>
+            </fieldset>
 
-        </a>
-      </li>
+            <label class="field">
+              <span class="field-label">Message</span>
+              <textarea name="message" class="input" rows="5"
+                placeholder="Tell me about the role, project or timeline…" required></textarea>
+            </label>
 
-      <li class="blog-post-item">
-        <a href="#">
-
-          <figure class="blog-banner-box">
-            <iframe width="100%" height="200" src="https://www.youtube.com/embed/tgbNymZ7vqY"
-              title="Best fonts every designer" frameborder="0" allowfullscreen loading="lazy"></iframe>
-          </figure>
-
-          <div class="blog-content">
-            <div class="blog-meta">
-              <p class="blog-category">Design</p>
-              <span class="dot"></span>
-              <time datetime="2022-02-23">Feb 23, 2022</time>
-            </div>
-
-            <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-            <p class="blog-text">
-              Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-            </p>
-          </div>
-
-        </a>
-      </li>
-
-      <li class="blog-post-item">
-        <a href="#">
-
-          <figure class="blog-banner-box">
-            <iframe width="100%" height="200" src="https://www.youtube.com/embed/kJQP7kiw5Fk" title="Design digest #80"
-              frameborder="0" allowfullscreen loading="lazy"></iframe>
-          </figure>
-
-          <div class="blog-content">
-            <div class="blog-meta">
-              <p class="blog-category">Design</p>
-              <span class="dot"></span>
-              <time datetime="2022-02-23">Feb 23, 2022</time>
-            </div>
-
-            <h3 class="h3 blog-item-title">Design digest #80</h3>
-            <p class="blog-text">
-              Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-            </p>
-          </div>
-
-        </a>
-      </li>
-
-      <li class="blog-post-item">
-        <a href="#">
-
-          <figure class="blog-banner-box">
-            <iframe width="100%" height="200" src="https://www.youtube.com/embed/3JZ_D3ELwOQ"
-              title="UI interactions of the week" frameborder="0" allowfullscreen loading="lazy"></iframe>
-          </figure>
-
-          <div class="blog-content">
-            <div class="blog-meta">
-              <p class="blog-category">Design</p>
-              <span class="dot"></span>
-              <time datetime="2022-02-23">Feb 23, 2022</time>
-            </div>
-
-            <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-            <p class="blog-text">
-              Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-            </p>
-          </div>
-
-        </a>
-      </li>
-
-      <li class="blog-post-item">
-        <a href="#">
-
-          <figure class="blog-banner-box">
-            <iframe width="100%" height="200" src="https://www.youtube.com/embed/eY52Zsg-KVI"
-              title="The forgotten art of spacing" frameborder="0" allowfullscreen loading="lazy"></iframe>
-          </figure>
-
-          <div class="blog-content">
-            <div class="blog-meta">
-              <p class="blog-category">Design</p>
-              <span class="dot"></span>
-              <time datetime="2022-02-23">Feb 23, 2022</time>
-            </div>
-
-            <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-            <p class="blog-text">
-              Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-
-        </a>
-      </li>
-
-      <li class="blog-post-item">
-        <a href="#">
-
-          <figure class="blog-banner-box">
-            <iframe width="100%" height="200" src="https://www.youtube.com/embed/9bZkp7q19f0" title="Design digest #79"
-              frameborder="0" allowfullscreen loading="lazy"></iframe>
-          </figure>
-
-          <div class="blog-content">
-            <div class="blog-meta">
-              <p class="blog-category">Design</p>
-              <span class="dot"></span>
-              <time datetime="2022-02-23">Feb 23, 2022</time>
-            </div>
-
-            <h3 class="h3 blog-item-title">Design digest #79</h3>
-            <p class="blog-text">
-              Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-            </p>
-          </div>
-
-        </a>
-      </li>
-
-    </ul>
-
-  </section>
-
-</article>
-
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26941.09044381354!2d73.5821669!3d32.42889889999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391f66a4a00f5537%3A0xa76e08e9cb994af0!2sPhalia%2C%20Mandi%20Bahauddin%2C%20Punjab!5e0!3m2!1sen!2s!4v1719652130163!5m2!1sen!2s"
-              width="400" height="3000" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="https://formspree.io/f/mnnvvjdn" method="POST" class="form" data-form>
-          
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-          
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-          
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
+            <button class="btn btn-primary btn-lg btn-block" type="submit" data-form-btn>
+              <span data-form-btn-text>Send message</span>
+              <ion-icon name="paper-plane-outline"></ion-icon>
             </button>
-          
+
+            <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+
           </form>
-          
-          <p id="form-message" class="success-message" style="display: none; color: green; margin-top: 1rem;"></p>
-          
 
-        </section>
+        </div>
 
-      </article>
-
-    </div>
+      </div>
+    </section>
 
   </main>
 
 
 
+  <!--
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#top" class="brand">
+        <span class="brand-mark">TZ</span>
+        <span class="brand-name">Touseeq Zulfiqar</span>
+      </a>
+      <p class="footer-copy">© <span data-year>2026</span> Touseeq Zulfiqar. Designed &amp; built with care.</p>
+      <ul class="footer-links">
+        <li><a href="https://www.linkedin.com/in/touseeq-zulfiqar-521510200/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/touseeqzulfiqar" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="./CV/Touseeq_zulfiqar_cv.pdf" download>Résumé</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <a href="#top" class="to-top" data-to-top aria-label="Back to top"><ion-icon name="arrow-up"></ion-icon></a>
 
 
 
   <!--
-    - custom js link
+    - #CASE STUDY DIALOG
   -->
+
+  <dialog class="case-dialog" data-case-dialog aria-labelledby="case-title">
+    <div class="case-inner">
+      <button class="icon-btn case-close" data-case-close aria-label="Close case study">
+        <ion-icon name="close"></ion-icon>
+      </button>
+      <div class="case-visual" data-case-visual></div>
+      <div class="case-body">
+        <p class="project-kicker" data-case-kicker></p>
+        <h2 class="case-title" id="case-title" data-case-title></h2>
+        <p class="case-summary" data-case-summary></p>
+
+        <div class="case-grid">
+          <div>
+            <h3 class="case-heading" data-case-heading>What I built</h3>
+            <ul class="case-points" data-case-points></ul>
+          </div>
+          <div>
+            <h3 class="case-heading">Tech stack</h3>
+            <ul class="tags" data-case-stack></ul>
+            <h3 class="case-heading case-heading-gap">Type</h3>
+            <p class="case-meta" data-case-type></p>
+          </div>
+        </div>
+
+        <div class="case-footer">
+          <p class="case-note">Want something like this for your business?</p>
+          <a href="#contact" class="btn btn-primary" data-case-close>
+            Let's talk <ion-icon name="arrow-forward"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+
+
+  <!--
+    - #COMMAND PALETTE
+  -->
+
+  <dialog class="cmdk" data-cmdk aria-label="Quick navigation">
+    <div class="cmdk-search">
+      <ion-icon name="search-outline"></ion-icon>
+      <input type="text" class="cmdk-input" placeholder="Where do you want to go?" data-cmdk-input
+        aria-label="Search sections and actions" autocomplete="off" spellcheck="false">
+      <kbd>Esc</kbd>
+    </div>
+    <ul class="cmdk-list" data-cmdk-list role="listbox"></ul>
+    <p class="cmdk-empty" data-cmdk-empty hidden>No results — try "projects" or "email".</p>
+    <div class="cmdk-foot">
+      <span><kbd>↑</kbd><kbd>↓</kbd> navigate</span>
+      <span><kbd>Enter</kbd> select</span>
+    </div>
+  </dialog>
+
+  <div class="toast" data-toast role="status" aria-live="polite">
+    <ion-icon name="checkmark-circle"></ion-icon>
+    <span data-toast-text></span>
+  </div>
+
+
+
   <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-
-<!-- Page Routing Script -->
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const currentPath = window.location.pathname.toLowerCase();
-    const pathSegment = currentPath.split("/").filter(Boolean).pop();
-
-    const pageRoutes = {
-      "youtube": "ytportfolio",
-      "webdevelopment": "webportfolio",
-      "appdevelopment": "resume"
-    };
-
-    const targetPage = pageRoutes[pathSegment];
-
-    if (targetPage) {
-      document.querySelectorAll("[data-page]").forEach(section => {
-        section.classList.remove("active");
-      });
-
-      const visibleSection = document.querySelector(`[data-page="\${targetPage}"]`);
-      if (visibleSection) {
-        visibleSection.classList.add("active");
-      }
-
-      document.querySelectorAll(".navbar-link").forEach(navBtn => {
-        navBtn.classList.remove("active");
-        const btnText = navBtn.textContent.toLowerCase().replace(/\s/g, '');
-        if (btnText.includes(targetPage.replace("portfolio", ""))) {
-          navBtn.classList.add("active");
-        }
-      });
-    }
-  });
-</script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </body>
 
