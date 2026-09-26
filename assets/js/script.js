@@ -147,7 +147,8 @@ document.querySelectorAll("[data-years-since]").forEach((el) => {
   const [year, month] = el.dataset.yearsSince.split("-").map(Number);
   const now = new Date();
   const months = (now.getFullYear() - year) * 12 + (now.getMonth() + 1 - month);
-  const years = Math.max(1, Math.floor(months / 12));
+  // count months inclusively (Oct 2023 → Sep 2026 = 36 months = 3 years)
+  const years = Math.max(1, Math.floor((months + 1) / 12));
   el.textContent = years;
   el.dataset.count = years;
 });
